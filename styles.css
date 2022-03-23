@@ -1,0 +1,49 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: verdana;
+}
+
+#header-img {
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -999;
+    min-width: 100%;
+    min-height: 100%;
+    filter: brightness(30%);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+    font-size: 20pt;
+}
+
+a:hover {
+    color:chocolate;
+}
+
+ul{
+    list-style-type: none;
+    position: absolute;
+    right: 3%;
+}
+li {
+    display: inline;
+    padding-left: 45px;
+}
+
+#logo {
+    position: absolute;
+    left: 3%;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+#header {
+    color: white;
+    position: absolute;
+    top: 3%; 
+    width: 100%;
+}
