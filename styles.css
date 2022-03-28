@@ -41,6 +41,20 @@ li {
     font-weight: bold;
 }
 
+#center-page{
+    text-align: center;
+    margin-top: 40vh;
+}
+
+#center-page > p {
+    margin-top: 10px;
+    font-size: 20pt;
+}
+#center-page > h1 {
+    font-size: 40pt;
+    margin-bottom: 0;
+}
+
 #header {
     color: white;
     position: absolute;
