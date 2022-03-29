@@ -63,11 +63,34 @@ li {
     width: 100%;
 }
 
-#menu {
+#menu, #about-us, #contact-us {
     margin-top: 105vh;
 }
 
 .menu-link:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+#contact-form{
+    border: 1px solid black;
+}
+
+@media only screen and (max-width:768px){
+    /* #logo, ul{
+        position: static;
+        text-align: center;
+    } */
+
+    #logo{
+        left: 40%;
+    }
+    ul {
+        top: 11%;
+        left: 0;
+    }
+    ul:first-child{
+        padding-left: 0;
+    }
+    /* fix margin for ul */
 }
