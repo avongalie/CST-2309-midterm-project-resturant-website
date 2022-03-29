@@ -2,6 +2,7 @@ html, body {
     width: 100%;
     overflow-x: hidden;
     font-family: verdana;
+    text-align: center;
 }
 
 #header-img {
@@ -60,4 +61,13 @@ li {
     position: absolute;
     top: 3%; 
     width: 100%;
+}
+
+#menu {
+    margin-top: 105vh;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
