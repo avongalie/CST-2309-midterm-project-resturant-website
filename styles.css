@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,900&display=swap');
+
 html, body {
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
     font-family: verdana;
     text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+/* main header styles. (applys to all pages) */
+
+#header {
+    color: white;
+    position: absolute;
+    top: 3%; 
+    width: 100%;
 }
 
 #header-img {
@@ -10,8 +22,9 @@ html, body {
     top: 0; left: 0;
     z-index: -999;
     min-width: 100%;
-    min-height: 100%;
-    filter: brightness(30%);
+    /* min-height: 100%; */
+    height: 100vh;
+    filter: brightness(50%);
 }
 
 
@@ -19,7 +32,6 @@ html, body {
 .nav-link {
     text-decoration: none;
     color: white;
-    transition: 0.3s ease;
     font-size: 20pt;
 }
 
@@ -37,45 +49,68 @@ li {
     padding-left: 45px;
 }
 
-#logo {
+#logo{
     position: absolute;
     left: 3%;
     margin-top: 1em;
     font-weight: bold;
 }
 
+
 #center-page{
     text-align: center;
     margin-top: 40vh;
 }
 
-#center-page > p {
-    margin-top: 10px;
-    font-size: 20pt;
-}
-#center-page > h1 {
-    font-size: 40pt;
-    margin-bottom: 0;
+.centerpage-link{
+    color:white;
+    text-decoration: none;
 }
 
-#header {
-    color: white;
-    position: absolute;
-    top: 3%; 
-    width: 100%;
+.centerpage-link:hover{
+    text-decoration: underline;
 }
+
+#center-page > p {
+    margin-top: 10px;
+    font-size: 25pt;
+}
+#center-page > h1 {
+    font-size: 50pt;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-style: italic;
+}
+
+table{
+    margin: 0 auto;
+}
+
+
+
+
 
 #menu, #about-us, #contact-us {
     margin-top: 105vh;
 }
 
-.menu-link:hover {
+#dinner-link{
     text-decoration: underline;
+}
+
+#dinner-link:hover, #cocktail-link:hover {
     cursor: pointer;
 }
 
+
+#menu > h2 {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 30pt;
+}
+
 #contact-form{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .menu-title{
@@ -114,10 +149,13 @@ li {
     ul {
         padding-top: 40vh;
         left: 0;
+        right: 0;
         margin: 0 auto;
         padding-left: 0;
     }
 
+    li{
+        display: block;
        padding-left: 0;
         color: black;
        padding-bottom: 30px;

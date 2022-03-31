@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <img id="header-img" src="images/homepage_background.jpeg">
+        <img id="header-img" src="images/menu_background.png">
         <div id="menu-overlay"></div>
         <div id="header"> 
             <nav>
@@ -31,10 +31,10 @@
         <div id="main-content">
         <div id="menu">
             <h2>Menu</h2>
-            <p><span class="menu-link" onclick="openDinnerMenu()">Dinner</span> <span class="menu-link" onclick="openCocktailMenu()">Cocktails</span></p>
+            <p><span id="dinner-link" onclick="openMenu('dinner')">Dinner</span> <span id="cocktail-link" onclick="openMenu('cocktail')">Cocktails</span></p>
             <!-- Make sure menus have the same height forcefully -->
             <div id="dinner-menu">
-                <h5>Appetizer</h5>
+                <p class="menu-title">Appetizer</p>
                 <p>Edamame 7<br>
                     French Fries 7<br>
                     Takoyaki 8<br>
@@ -44,32 +44,32 @@
                     House Salad 5<br>
                     Fried Squid 8
                 </p>
-                <h5>Bento Box</h5>
+                <p class="menu-title">Bento Box</p>
                 <p>
                     Salmon Bento 14<br>
                     Chicken Bento 14
                 </p>
-                <h5>Ramen</h5>
+                <p class="menu-title">Ramen</p>
                 <p>
                     Tonkotsu Ramen 15<br>
                     Shoyu Ramen 14<br>
                     Miso Ramen 14
                 </p>
-                <h5>Korean Fried Wings</h5>
+                <p class="menu-title">Korean Fried Wings</p>
 
                 <p>
                     Small (6 pieces) 13<br>
                     Medium (12 pieces) 21<br>
                     Large (20 pieces) 28
                 </p>
-                <h5>Sushi Entrees</h5>
+                <p class="menu-title">Sushi Entrees</p>
                 <p>
                     Sushi Regular 27<br>
                     Sushi Deluxe 35<br>
                     Sashimi Regular 25<br>
                     Sashimi Regular 33
                 </p>
-                <h5>Rolls</h5>
+                <p class="menu-title">Rolls</p>
                 <p>
                     <!-- cent symbol -->
                     <span id="roll-addons">For 50c add avocado, scallion, or jalapenos</span><br>
@@ -85,7 +85,7 @@
                 </p>
             </div>
             <div id="cocktail-menu">
-                <h5>Cocktails</h5>
+                <p class="menu-title">Cocktails</p>
                 <p>
                     Blueberry Crush 14<br>
                     Love Potion 14<br>
@@ -97,7 +97,7 @@
                     Mojito 13<br>
                     Martini 13
                 </p>
-                <h5>Sake</h5>
+                <p class="menu-title">Sake</p>
                 <p>
                     House S:6 / L:12<br>
                     Sho Chiku Bai Rei 14/17<br>
@@ -106,7 +106,7 @@
                     Hany Lychee 10/13<br>
                     Yuki Nigori Mango 13/16<br>
                 </p>
-                <h5>Soju</h5>
+                <p class="menu-title">Soju</p>
                 <p>
                     Chamisul 15<br>
                     Peach 15<br>
@@ -114,14 +114,14 @@
                     Yogurt 15<br>
                     Apple 15<br>
                 </p>
-                <h5>Beer</h5>
-                <h6>Tap</h6>
+                <p class="menu-title">Beer</p>
+                <p class="sub-menu-title">Tap</p>
                 <p>
                     Sapporo 8<br>
                     Coors 8<br>
                     Samuel Adams 8
                 </p>
-                <h6>Bottled</h6>
+                <p class="sub-menu-title">Bottled</p>
                 <p>
                     Corona 8<br>
                     Sapporo 8<br>
@@ -130,20 +130,20 @@
                     Modelo Negra 9<br>
                     Angry Orchid 9
                 </p>
-                <h5>Wine</h5>
-                <h6>White</h6>
+                <p class="menu-title">Wine</p>
+                <p class="sub-menu-title">White</p>
                 <p>
                     Pinot Grigio 8<br>
                     Chardonary 8<br>
                     Sauvignon Blanc 8
                 </p>
-                <h6>Red</h6>
+                <p class="sub-menu-title">Red</p>
                 <p>
                     Cabernet Sauvignon 8<br>
                     Merlot 10<br>
                     Pinot Nior 10
                 </p>
-                <h6>Sparkling</h6>
+                <p class="sub-menu-title">Sparkling</p>
                 <p>
                     Champagne 10
                 </p>
@@ -152,5 +152,6 @@
         </div>
         </div>
         <script src="script.js" async defer></script>
+        <script src="menu-script.js" async defer></script>
     </body>
 </html>
