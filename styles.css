@@ -87,7 +87,7 @@ table{
 }
 
 
-
+/* menu */
 
 
 #menu, #about-us, #contact-us {
@@ -98,6 +98,10 @@ table{
     text-decoration: underline;
 }
 
+#dinner-link, #cocktail-link{
+    font-size: 20pt;
+    padding: 5px;
+}
 #dinner-link:hover, #cocktail-link:hover {
     cursor: pointer;
 }
@@ -106,19 +110,68 @@ table{
 #menu > h2 {
     font-weight: 900;
     font-style: italic;
-    font-size: 30pt;
+    font-size: 50pt;
+    margin-bottom: 10px;
+}
+
+.menu-title{
+    font-size: 25pt;
+    margin-bottom: 10px;
+}
+
+.sub-menu-title {
+    color: grey;
+    font-size: 15pt;
+}
+
+.menu-text{
+    font-size: 15pt;
+}
+
+.menu-set{
+    width: 100vw;
+}
+
+#appetizer, #kfc{
+    height: 300px;
+}
+#appetizer > div{
+    margin-left: 25vw;
+}
+#appetizer > img{
+    margin-right: 25vw;
+}
+
+
+#kfc > div{
+    margin-right: 25vw;
+}
+#kfc > img{
+    margin-left: 25vw;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
 }
 
 #contact-form{
     /* border: 1px solid black; */
 }
 
-.menu-title{
-    font-size: 40pt
-}
 
 #hambg-menu{
     display: none;
+}
+
+.img{
+    margin-top: 50px;
+}
+
+.kfctitle{
+    margin-top: 30px;
 }
 
 
@@ -129,6 +182,7 @@ table{
 
         768
     } */
+  
 
     #logo {
         position: absolute;
@@ -189,4 +243,29 @@ table{
     }
 
     /* fix margin for ul */
+}
+@media only screen and (max-width: 1156px){
+    #appetizer{
+        height: 460px;
+    }
+
+    #appetizer > div, #kfc > img{
+        margin-left: 0;
+    }
+    #appetizer > img, #kfc > div{
+        margin-right: 0;
+    }
+
+    #kfc{
+        height: 370px;
+    }
+
+    .left, .right{
+        float: none;
+        margin-left: 0;
+        margin-right:0;
+    }
+    .img, .kfctitle{
+        margin: 0;
+    }
 }

@@ -34,43 +34,57 @@
             <p><span id="dinner-link" onclick="openMenu('dinner')">Dinner</span> <span id="cocktail-link" onclick="openMenu('cocktail')">Cocktails</span></p>
             <!-- Make sure menus have the same height forcefully -->
             <div id="dinner-menu">
-                <p class="menu-title">Appetizer</p>
-                <p>Edamame 7<br>
-                    French Fries 7<br>
-                    Takoyaki 8<br>
-                    Shrimp Shumai 7<br>
-                    Pork Gyoza 8<br>
-                    Spring Rolls 7<br>
-                    House Salad 5<br>
-                    Fried Squid 8
-                </p>
+                <div class="menu-set" id="appetizer">
+                    <div class="left">
+                        <p class="menu-title">Appetizer</p>
+                        <p class="menu-text">
+                            Edamame 7<br>
+                            French Fries 7<br>
+                            Takoyaki 8<br>
+                            Shrimp Shumai 7<br>
+                            Pork Gyoza 8<br>
+                            Spring Rolls 7<br>
+                            House Salad 5<br>
+                            Fried Squid 8
+                        </p>
+                </div>
+                <img class="right img" src ="images/drink.png" width="200px" height="200px">
+            </div>
+
                 <p class="menu-title">Bento Box</p>
-                <p>
+                <p class="menu-text">
                     Salmon Bento 14<br>
                     Chicken Bento 14
                 </p>
+
                 <p class="menu-title">Ramen</p>
-                <p>
+                <p class="menu-text">
                     Tonkotsu Ramen 15<br>
                     Shoyu Ramen 14<br>
                     Miso Ramen 14
                 </p>
-                <p class="menu-title">Korean Fried Wings</p>
+                
 
-                <p>
-                    Small (6 pieces) 13<br>
-                    Medium (12 pieces) 21<br>
-                    Large (20 pieces) 28
-                </p>
+                <div class="menu-set" id="kfc">
+                    <img class="left img" src ="images/drink.png" width="200px" height="200px">
+                    <div class="right kfctitle">
+                        <p class="menu-title">Korean Fried Wings</p>
+                        <p class="menu-text">
+                            Small (6 pieces) 13<br>
+                            Medium (12 pieces) 21<br>
+                            Large (20 pieces) 28
+                        </p>
+                    </div>
+                </div>
                 <p class="menu-title">Sushi Entrees</p>
-                <p>
+                <p class="menu-text">
                     Sushi Regular 27<br>
                     Sushi Deluxe 35<br>
                     Sashimi Regular 25<br>
                     Sashimi Regular 33
                 </p>
                 <p class="menu-title">Rolls</p>
-                <p>
+                <p class="menu-text">
                     <!-- cent symbol -->
                     <span id="roll-addons">For 50c add avocado, scallion, or jalapenos</span><br>
                     Tuna Rolls 6<br>
@@ -86,7 +100,7 @@
             </div>
             <div id="cocktail-menu">
                 <p class="menu-title">Cocktails</p>
-                <p>
+                <p class="menu-text">
                     Blueberry Crush 14<br>
                     Love Potion 14<br>
                     Jolly Rancher 14<br>
@@ -98,7 +112,7 @@
                     Martini 13
                 </p>
                 <p class="menu-title">Sake</p>
-                <p>
+                <p class="menu-text">
                     House S:6 / L:12<br>
                     Sho Chiku Bai Rei 14/17<br>
                     SCB Organic nama 12/15<br>
@@ -107,7 +121,7 @@
                     Yuki Nigori Mango 13/16<br>
                 </p>
                 <p class="menu-title">Soju</p>
-                <p>
+                <p class="menu-text">
                     Chamisul 15<br>
                     Peach 15<br>
                     Green Grape 15<br>
@@ -116,13 +130,13 @@
                 </p>
                 <p class="menu-title">Beer</p>
                 <p class="sub-menu-title">Tap</p>
-                <p>
+                <p class="menu-text">
                     Sapporo 8<br>
                     Coors 8<br>
                     Samuel Adams 8
                 </p>
                 <p class="sub-menu-title">Bottled</p>
-                <p>
+                <p class="menu-text">
                     Corona 8<br>
                     Sapporo 8<br>
                     Heinken 8<br>
@@ -132,19 +146,19 @@
                 </p>
                 <p class="menu-title">Wine</p>
                 <p class="sub-menu-title">White</p>
-                <p>
+                <p class="menu-text">
                     Pinot Grigio 8<br>
                     Chardonary 8<br>
                     Sauvignon Blanc 8
                 </p>
                 <p class="sub-menu-title">Red</p>
-                <p>
+                <p class="menu-text">
                     Cabernet Sauvignon 8<br>
                     Merlot 10<br>
                     Pinot Nior 10
                 </p>
                 <p class="sub-menu-title">Sparkling</p>
-                <p>
+                <p class="menu-text">
                     Champagne 10
                 </p>
 
