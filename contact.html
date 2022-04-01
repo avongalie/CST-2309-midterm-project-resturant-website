@@ -32,23 +32,24 @@
         <div id="main-content">
         <div id="contact-us">
             <h2>Contact Us</h2>
-            <p>If you have a question, want to book a party, or a reservation for karaoke, 
+            <p id="contact-txt">If you have a question, want to book a party, or a reservation for karaoke, 
                 please fill out the form below.</p>
             <form id="contact-form">
                 <fieldset>
-                    <label for="name">Name: </label>
-                    <input type="text" id="name" name="name"><br><br>
-                    <label for="email">Email: </label>
-                    <input type="email" id="email" name="email">
+                    <p><span style="color: red">*</span> - required</p>
+                    <label for="name"><span style="color: red">*</span>Name: </label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email"><span style="color: red">*</span>Email: </label>
+                    <input type="email" id="email" name="email" required>
                 </fieldset>
                 <fieldset>
-                    <label for="reason">Reason</label> <select name="reason">
+                    <label for="reason"><span style="color: red">*</span>Reason</label> <select name="reason">
                         <option>Issues</option>
                         <option>Karoke Reservation</option>
                         <option>Dinner Reservation</option>
                     </select><br>
-                    <label for="date">Date: </label>
-                    <input type="date" id="date" name="date"><br>
+                    <label for="date"><span style="color: red">*</span>Date: </label>
+                    <input type="date" id="date" name="date" required><br>
                     <label for="time">Time: </label><select name="time">
                         <option>4:00 PM</option>
                         <option>5:00 PM</option>
