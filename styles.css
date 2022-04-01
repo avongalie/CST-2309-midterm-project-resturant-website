@@ -214,13 +214,57 @@ tr{
 }
 
 
-@media only screen and (max-width:768px){
-    /* #logo, ul{
-        position: static;
-        text-align: center;
+footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 50px;
+}
 
-        768
-    } */
+footer > span, #social{
+    font-size: 15pt;
+    margin-top: 10px;
+}
+
+footer > a, #social{
+    width: 212.7px;
+}
+#social > a{
+    color: black;
+}
+
+#social > a > * {
+    animation-iteration-count: 1;
+}
+
+#home-github{
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: 50px;
+}
+
+@media only screen and (max-width:480px){
+/* moblie phones */
+    footer{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    footer > *{
+        margin: 5px auto;
+    }
+
+}
+@media only screen and (min-width:769px){
+    #home-github{
+        content: url('images/github_logo_white.png');
+    }
+}
+
+
+@media only screen and (max-width:768px){
+    /* moblie phones and tablets */
   
 
     #logo {
@@ -238,6 +282,7 @@ tr{
     .hidden {
         display: none;
     }
+
 
     ul {
         padding-top: 40vh;
