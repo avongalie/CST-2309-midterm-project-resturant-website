@@ -11,89 +11,91 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <img id="header-img" alt="Background Image" src="images/contact_us_background.jpeg">
-        <div id="menu-overlay"></div>
-        <div id="header"> 
-            <nav>
-                <div id="hm"><i id="hambg-menu" class="fa-solid fa-bars fa-2xl"></i></div>
-                <div id="logo"><a class="nav-link" href="index.html">塩 Shio</a></div>     
-            
-                <ul id="nav-ul" class="hidden">
-                    <li><a class="nav-link" href="menu.html">Menu</a></li>
-                    <li><a class="nav-link" href="about-us.html">About Us</a></li>
-                    <li><a class="nav-link" href="contact.html">Contact</a></li>
-
-                </ul>
-            </nav>
-            <div id="center-page">
-            <h1>Contact Us</h1>
-            <p>Sign up for karaoke below</p>
-            </div>
-        </div> 
-        <div id="main-content">
-        <div id="contact-us">
-            <h2>Contact Us</h2>
-            <p id="contact-txt">If you have a question, want to book a party, or a reservation for karaoke, 
-                please fill out the form below.</p>
-            <form id="contact-form">
-                <fieldset>
-                    <p><span style="color: red">*</span> - required</p>
-                    <label for="name"><span style="color: red">*</span>Name: </label>
-                    <input type="text" id="name" name="name" required><br><br>
-                    <label for="email"><span style="color: red">*</span>Email: </label>
-                    <input type="email" id="email" name="email" required>
-                </fieldset>
-                <fieldset>
-                    <label for="reason"><span style="color: red">*</span>Reason</label> <select id="reason" name="reason">
-                        <option>Issues</option>
-                        <option>Karoke Reservation</option>
-                        <option>Dinner Reservation</option>
-                    </select><br>
-                    <label for="date"><span style="color: red">*</span>Date: </label>
-                    <input type="date" id="date" name="date" required><br>
-                    <label for="time">Time: </label><select id="time" name="time">
-                        <option>4:00 PM</option>
-                        <option>5:00 PM</option>
-                        <option>6:00 PM</option>
-                        <option>7:00 PM</option>
-                        <option>8:00 PM</option>
-                        <option>9:00 PM</option>
-                        <option>10:00 PM</option>
-                        <option>11:00 PM</option>
-                        <option>12:00 PM</option>
-                        <option>1:00 AM</option>
-                        <option>2:00 AM</option>
-                        <option>3:00 AM</option>
-                        <option>4:00 AM</option>
-                    </select><br>
-                    <label for="group-size">Group Size: </label><select id="group-size" name="group-size">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9+</option>
-                    </select><br>
-                    <label for="message">Message: </label><br>
-                    <textarea id="message" name="message" rows="10" cols="30" placeholder="Tell us more about your issue or reservation"></textarea>
-                </fieldset> 
-                    <button type="submit">Click to Submit</button>
+        <div id="wrapper">
+            <img id="header-img" alt="Background Image" src="images/contact_us_background.jpeg">
+            <div id="menu-overlay"></div>
+            <div id="header"> 
+                <nav>
+                    <div id="hm"><i id="hambg-menu" class="fa-solid fa-bars fa-2xl"></i></div>
+                    <div id="logo"><a class="nav-link" href="index.html">塩 Shio</a></div>     
                 
-            </form>
-        </div>
-        <hr>
-        </div>
-        <footer>
-            <span>Created by Alexsia Avila</span>
-            <a href="https://github.com/avongalie/CST-2309-midterm-project-resturant-website"><img id="github-logo" src="images/github_logo.png" alt="Github Link"></a>
-            <div id="social">
-                <a href="https://www.instagram.com/avongalie/"><i id="ig" class="fa-brands fa-instagram fa-2xl"></i></a>
-                <a href="malito:alexsiaavila@gmail.com"><i id="mailto" class="fa-solid fa-envelope fa-2xl"></i></a>
+                    <ul id="nav-ul" class="hidden">
+                        <li><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li><a class="nav-link" href="about-us.html">About Us</a></li>
+                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+
+                    </ul>
+                </nav>
+                <div id="center-page">
+                <h1>Contact Us</h1>
+                <p>Sign up for karaoke below</p>
+                </div>
+            </div> 
+            <div id="main-content">
+            <div id="contact-us">
+                <h2>Contact Us</h2>
+                <p id="contact-txt">If you have a question, want to book a party, or a reservation for karaoke, 
+                    please fill out the form below.</p>
+                <form id="contact-form">
+                    <fieldset>
+                        <p><span style="color: red">*</span> - required</p>
+                        <label for="name"><span style="color: red">*</span>Name: </label>
+                        <input type="text" id="name" name="name" required><br><br>
+                        <label for="email"><span style="color: red">*</span>Email: </label>
+                        <input type="email" id="email" name="email" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="reason"><span style="color: red">*</span>Reason</label> <select id="reason" name="reason">
+                            <option>Issues</option>
+                            <option>Karoke Reservation</option>
+                            <option>Dinner Reservation</option>
+                        </select><br>
+                        <label for="date"><span style="color: red">*</span>Date: </label>
+                        <input type="date" id="date" name="date" required><br>
+                        <label for="time">Time: </label><select id="time" name="time">
+                            <option>4:00 PM</option>
+                            <option>5:00 PM</option>
+                            <option>6:00 PM</option>
+                            <option>7:00 PM</option>
+                            <option>8:00 PM</option>
+                            <option>9:00 PM</option>
+                            <option>10:00 PM</option>
+                            <option>11:00 PM</option>
+                            <option>12:00 PM</option>
+                            <option>1:00 AM</option>
+                            <option>2:00 AM</option>
+                            <option>3:00 AM</option>
+                            <option>4:00 AM</option>
+                        </select><br>
+                        <label for="group-size">Group Size: </label><select id="group-size" name="group-size">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9+</option>
+                        </select><br>
+                        <label for="message">Message: </label><br>
+                        <textarea id="message" name="message" rows="10" cols="30" placeholder="Tell us more about your issue or reservation"></textarea>
+                    </fieldset> 
+                        <button type="submit">Click to Submit</button>
+                    
+                </form>
             </div>
-        </footer>
+            <hr>
+            </div>
+            <footer>
+                <span>Created by Alexsia Avila</span>
+                <a href="https://github.com/avongalie/CST-2309-midterm-project-resturant-website"><img id="github-logo" src="images/github_logo.png" alt="Github Link"></a>
+                <div id="social">
+                    <a href="https://www.instagram.com/avongalie/"><i id="ig" class="fa-brands fa-instagram fa-2xl"></i></a>
+                    <a href="malito:alexsiaavila@gmail.com"><i id="mailto" class="fa-solid fa-envelope fa-2xl"></i></a>
+                </div>
+            </footer>
+        </div>
         <script src="script.js" async defer></script>
     </body>
 </html>
