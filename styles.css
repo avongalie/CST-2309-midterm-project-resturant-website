@@ -264,7 +264,8 @@ footer > a, #social{
     }
 
     #wrapper{
-        position: relative;
+        /* position: relative; */
+        
         overflow-x: hidden;
     }
 
