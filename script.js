@@ -22,7 +22,7 @@ hm.addEventListener('click', (event) => {
             }
             )
             ul.classList.add("hidden");
-            logo.style.zIndex = "1";
+            logo.style.zIndex = "0";
             mainContent.style.display = "block";
             menuOverlay.style.display = "none";
             menuOpen = false;
@@ -36,7 +36,7 @@ hm.addEventListener('click', (event) => {
             }
             )
             ul.classList.remove("hidden");
-            logo.style.zIndex = "0";
+            logo.style.zIndex = "1";
             mainContent.style.display = "none";
             menuOverlay.style.display = "block";
             menuOpen = true;
