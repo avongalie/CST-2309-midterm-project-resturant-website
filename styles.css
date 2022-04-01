@@ -107,7 +107,7 @@ table{
 }
 
 
-#menu > h2 {
+#menu > h2, #about-us > h2 {
     font-weight: 900;
     font-style: italic;
     font-size: 50pt;
@@ -157,6 +157,21 @@ table{
     float: right;
 }
 
+table{
+    border: 1px solid black;
+}
+td{
+    width: 100px;
+}
+tr{
+    height: 30px;
+}
+
+.about-txt{
+    font-size: 20pt;
+    width: 90vw;
+    margin: 20px auto;
+}
 #contact-form{
     /* border: 1px solid black; */
 }
