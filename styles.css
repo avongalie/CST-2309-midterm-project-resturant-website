@@ -3,7 +3,6 @@
 html, body {
     width: 100vw;
     overflow-x: hidden;
-    font-family: verdana;
     text-align: center;
     font-family: 'Playfair Display', serif;
 }
@@ -84,6 +83,22 @@ li {
 
 table{
     margin: 0 auto;
+}
+
+button{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5%;
+    offset: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 15pt;
+    padding: 3px 30px;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
 }
 
 
@@ -170,13 +185,17 @@ tr{
     width: 90vw;
     margin: 20px auto;
 }
-#contact-form > * {
+#contact-form > fieldset {
    width: 50vw;
    font-size: 15pt;
    margin: 0 auto;
 }
 #contact-form > * > p {
     margin: 0 auto;
+}
+
+#contact-form > button {
+    margin-top: 10px;
 }
 
 
@@ -186,6 +205,8 @@ tr{
 
 .img{
     margin-top: 50px;
+    border: 5px double black;
+    border-radius: 2%;
 }
 
 .kfctitle{
