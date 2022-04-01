@@ -264,11 +264,17 @@ footer > a, #social{
     }
 
     #wrapper{
-        position:block;
-        
+        position: relative;
+        margin-top: -21px;
+        width: 100vw;
+        height: 100vh; 
         overflow-x: hidden;
     }
-
+    html, body {
+        display: initial;
+        height: 100vh; 
+        overflow-y: hidden;
+    }
 }
 @media only screen and (min-width:769px){
     #home-github{

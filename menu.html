@@ -11,176 +11,179 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <img id="header-img" alt="Background Image" src="images/menu_background.png">
-        <div id="menu-overlay"></div>
-        <div id="header"> 
-            <nav>
-                <div id="hm"><i id="hambg-menu" class="fa-solid fa-bars fa-2xl"></i></div>
-                <div id="logo"><a class="nav-link" href="index.html">塩 Shio</a></div>     
-            
-                <ul id="nav-ul" class="hidden">
-                    <li><a class="nav-link" href="menu.html">Menu</a></li>
-                    <li><a class="nav-link" href="about-us.html">About Us</a></li>
-                    <li><a class="nav-link" href="contact.html">Contact</a></li>
 
-                </ul>
-            </nav>
-            <div id="center-page">
-            <h1>Menu</h1>
-            </div>
-        </div> 
-        <div id="main-content">
-        <div id="menu">
-            <h2>Menu</h2>
-            <p><span id="dinner-link" onclick="openMenu('dinner')">Dinner</span> <span id="cocktail-link" onclick="openMenu('cocktail')">Cocktails</span></p>
-            <!-- Make sure menus have the same height forcefully -->
-            <div id="dinner-menu">
-                <div class="menu-set" id="appetizer">
-                    <div class="left">
-                        <p class="menu-title">Appetizer</p>
-                        <p class="menu-text">
-                            Edamame 7<br>
-                            French Fries 7<br>
-                            Takoyaki 8<br>
-                            Shrimp Shumai 7<br>
-                            Pork Gyoza 8<br>
-                            Spring Rolls 7<br>
-                            House Salad 5<br>
-                            Fried Squid 8
-                        </p>
-                </div>
-                <img class="right img" alt="Gyoza" src="images/gyoza.jpeg">
-            </div>
-
-            <div style="clear: left;">
-                <p class="menu-title">Bento Box</p>
-                <p class="menu-text">
-                    Salmon Bento 14<br>
-                    Chicken Bento 14
-                </p>
-                </div>
-
-                <p class="menu-title">Ramen</p>
-                <p class="menu-text">
-                    Tonkotsu Ramen 15<br>
-                    Shoyu Ramen 14<br>
-                    Miso Ramen 14
-                </p>
+        <div id="wrapper">
+            <img id="header-img" alt="Background Image" src="images/menu_background.png">
+            <div id="menu-overlay"></div>
+            <div id="header"> 
+                <nav>
+                    <div id="hm"><i id="hambg-menu" class="fa-solid fa-bars fa-2xl"></i></div>
+                    <div id="logo"><a class="nav-link" href="index.html">塩 Shio</a></div>     
                 
+                    <ul id="nav-ul" class="hidden">
+                        <li><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li><a class="nav-link" href="about-us.html">About Us</a></li>
+                        <li><a class="nav-link" href="contact.html">Contact</a></li>
 
-                <div class="menu-set" id="kfc">
-                    <img class="left img" alt="Korean Fried Chicken" src ="images/kfc.jpeg">
-                    <div class="right kfctitle">
-                        <p class="menu-title">Korean Fried Wings</p>
-                        <p class="menu-text">
-                            Small (6 pieces) 13<br>
-                            Medium (12 pieces) 21<br>
-                            Large (20 pieces) 28
-                        </p>
+                    </ul>
+                </nav>
+                <div id="center-page">
+                <h1>Menu</h1>
+                </div>
+            </div> 
+            <div id="main-content">
+            <div id="menu">
+                <h2>Menu</h2>
+                <p><span id="dinner-link" onclick="openMenu('dinner')">Dinner</span> <span id="cocktail-link" onclick="openMenu('cocktail')">Cocktails</span></p>
+                <!-- Make sure menus have the same height forcefully -->
+                <div id="dinner-menu">
+                    <div class="menu-set" id="appetizer">
+                        <div class="left">
+                            <p class="menu-title">Appetizer</p>
+                            <p class="menu-text">
+                                Edamame 7<br>
+                                French Fries 7<br>
+                                Takoyaki 8<br>
+                                Shrimp Shumai 7<br>
+                                Pork Gyoza 8<br>
+                                Spring Rolls 7<br>
+                                House Salad 5<br>
+                                Fried Squid 8
+                            </p>
                     </div>
+                    <img class="right img" alt="Gyoza" src="images/gyoza.jpeg">
                 </div>
-                
-                <div style="clear: left;">
-                <p class="menu-title">Sushi Entrees</p>
-                <p class="menu-text">
-                    Sushi Regular 27<br>
-                    Sushi Deluxe 35<br>
-                    Sashimi Regular 25<br>
-                    Sashimi Regular 33
-                </p>
-                </div>
-                <p class="menu-title">Rolls</p>
-                <p class="menu-text">
-                    <!-- cent symbol -->
-                    <span style="color: purple;">For 50&#162; add avocado, scallion, or jalapenos</span><br>
-                    Tuna Rolls 6<br>
-                    Salmon Roll 6<br>
-                    Yellowtail Roll 6<br>
-                    California Roll 4<br>
-                    Cucumber Roll 4<br>
-                    Spicy Tuna Roll 6.5<br>
-                    Spicy Salmon Roll 6.5<br>
-                    Spicy Yellowtail Roll 6.5<br>
-                    Shrimp Tempura Roll 7
-                </p>
-            </div>
-            <div id="cocktail-menu">
-                <p class="menu-title">Cocktails</p>
-                <p class="menu-text">
-                    Blueberry Crush 14<br>
-                    Love Potion 14<br>
-                    Jolly Rancher 14<br>
-                    Mimosa 10<br>
-                    Magarita 13<br>
-                    Manhattan 13<br>
-                    Long Island Tea 13<br>
-                    Mojito 13<br>
-                    Martini 13
-                </p>
-                <p class="menu-title">Sake</p>
-                <p class="menu-text">
-                    House S:6 / L:12<br>
-                    Sho Chiku Bai Rei 14/17<br>
-                    SCB Organic nama 12/15<br>
-                    Hana White Peach 10/13<br>
-                    Hany Lychee 10/13<br>
-                    Yuki Nigori Mango 13/16<br>
-                </p>
-                <p class="menu-title">Soju</p>
-                <p class="menu-text">
-                    Chamisul 15<br>
-                    Peach 15<br>
-                    Green Grape 15<br>
-                    Yogurt 15<br>
-                    Apple 15<br>
-                </p>
-                <p class="menu-title">Beer</p>
-                <p class="sub-menu-title">Tap</p>
-                <p class="menu-text">
-                    Sapporo 8<br>
-                    Coors 8<br>
-                    Samuel Adams 8
-                </p>
-                <p class="sub-menu-title">Bottled</p>
-                <p class="menu-text">
-                    Corona 8<br>
-                    Sapporo 8<br>
-                    Heinken 8<br>
-                    Blue moon 8<br>
-                    Modelo Negra 9<br>
-                    Angry Orchid 9
-                </p>
-                <p class="menu-title">Wine</p>
-                <p class="sub-menu-title">White</p>
-                <p class="menu-text">
-                    Pinot Grigio 8<br>
-                    Chardonary 8<br>
-                    Sauvignon Blanc 8
-                </p>
-                <p class="sub-menu-title">Red</p>
-                <p class="menu-text">
-                    Cabernet Sauvignon 8<br>
-                    Merlot 10<br>
-                    Pinot Nior 10
-                </p>
-                <p class="sub-menu-title">Sparkling</p>
-                <p class="menu-text">
-                    Champagne 10
-                </p>
 
+                <div style="clear: left;">
+                    <p class="menu-title">Bento Box</p>
+                    <p class="menu-text">
+                        Salmon Bento 14<br>
+                        Chicken Bento 14
+                    </p>
+                    </div>
+
+                    <p class="menu-title">Ramen</p>
+                    <p class="menu-text">
+                        Tonkotsu Ramen 15<br>
+                        Shoyu Ramen 14<br>
+                        Miso Ramen 14
+                    </p>
+                    
+
+                    <div class="menu-set" id="kfc">
+                        <img class="left img" alt="Korean Fried Chicken" src ="images/kfc.jpeg">
+                        <div class="right kfctitle">
+                            <p class="menu-title">Korean Fried Wings</p>
+                            <p class="menu-text">
+                                Small (6 pieces) 13<br>
+                                Medium (12 pieces) 21<br>
+                                Large (20 pieces) 28
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div style="clear: left;">
+                    <p class="menu-title">Sushi Entrees</p>
+                    <p class="menu-text">
+                        Sushi Regular 27<br>
+                        Sushi Deluxe 35<br>
+                        Sashimi Regular 25<br>
+                        Sashimi Regular 33
+                    </p>
+                    </div>
+                    <p class="menu-title">Rolls</p>
+                    <p class="menu-text">
+                        <!-- cent symbol -->
+                        <span style="color: purple;">For 50&#162; add avocado, scallion, or jalapenos</span><br>
+                        Tuna Rolls 6<br>
+                        Salmon Roll 6<br>
+                        Yellowtail Roll 6<br>
+                        California Roll 4<br>
+                        Cucumber Roll 4<br>
+                        Spicy Tuna Roll 6.5<br>
+                        Spicy Salmon Roll 6.5<br>
+                        Spicy Yellowtail Roll 6.5<br>
+                        Shrimp Tempura Roll 7
+                    </p>
+                </div>
+                <div id="cocktail-menu">
+                    <p class="menu-title">Cocktails</p>
+                    <p class="menu-text">
+                        Blueberry Crush 14<br>
+                        Love Potion 14<br>
+                        Jolly Rancher 14<br>
+                        Mimosa 10<br>
+                        Magarita 13<br>
+                        Manhattan 13<br>
+                        Long Island Tea 13<br>
+                        Mojito 13<br>
+                        Martini 13
+                    </p>
+                    <p class="menu-title">Sake</p>
+                    <p class="menu-text">
+                        House S:6 / L:12<br>
+                        Sho Chiku Bai Rei 14/17<br>
+                        SCB Organic nama 12/15<br>
+                        Hana White Peach 10/13<br>
+                        Hany Lychee 10/13<br>
+                        Yuki Nigori Mango 13/16<br>
+                    </p>
+                    <p class="menu-title">Soju</p>
+                    <p class="menu-text">
+                        Chamisul 15<br>
+                        Peach 15<br>
+                        Green Grape 15<br>
+                        Yogurt 15<br>
+                        Apple 15<br>
+                    </p>
+                    <p class="menu-title">Beer</p>
+                    <p class="sub-menu-title">Tap</p>
+                    <p class="menu-text">
+                        Sapporo 8<br>
+                        Coors 8<br>
+                        Samuel Adams 8
+                    </p>
+                    <p class="sub-menu-title">Bottled</p>
+                    <p class="menu-text">
+                        Corona 8<br>
+                        Sapporo 8<br>
+                        Heinken 8<br>
+                        Blue moon 8<br>
+                        Modelo Negra 9<br>
+                        Angry Orchid 9
+                    </p>
+                    <p class="menu-title">Wine</p>
+                    <p class="sub-menu-title">White</p>
+                    <p class="menu-text">
+                        Pinot Grigio 8<br>
+                        Chardonary 8<br>
+                        Sauvignon Blanc 8
+                    </p>
+                    <p class="sub-menu-title">Red</p>
+                    <p class="menu-text">
+                        Cabernet Sauvignon 8<br>
+                        Merlot 10<br>
+                        Pinot Nior 10
+                    </p>
+                    <p class="sub-menu-title">Sparkling</p>
+                    <p class="menu-text">
+                        Champagne 10
+                    </p>
+
+                </div>
             </div>
-        </div>
-        <hr>
-        </div>
-        
-        <footer>
-            <span>Created by Alexsia Avila</span>
-            <a href="https://github.com/avongalie/CST-2309-midterm-project-resturant-website"><img id="github-logo" src="images/github_logo.png" alt="Github Link"></a>
-            <div id="social">
-                <a href="https://www.instagram.com/avongalie/"><i id="ig" class="fa-brands fa-instagram fa-2xl"></i></a>
-                <a href="malito:alexsiaavila@gmail.com"><i id="mailto" class="fa-solid fa-envelope fa-2xl"></i></a>
+            <hr>
             </div>
-        </footer>
+            
+            <footer>
+                <span>Created by Alexsia Avila</span>
+                <a href="https://github.com/avongalie/CST-2309-midterm-project-resturant-website"><img id="github-logo" src="images/github_logo.png" alt="Github Link"></a>
+                <div id="social">
+                    <a href="https://www.instagram.com/avongalie/"><i id="ig" class="fa-brands fa-instagram fa-2xl"></i></a>
+                    <a href="malito:alexsiaavila@gmail.com"><i id="mailto" class="fa-solid fa-envelope fa-2xl"></i></a>
+                </div>
+            </footer>
+        </div>
         <script src="script.js" async defer></script>
         <script src="menu-script.js" async defer></script>
     </body>
