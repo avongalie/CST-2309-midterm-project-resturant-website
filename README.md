@@ -3,6 +3,8 @@
 ## Introduction
 For my CST 2309 Class, I was asked to design a resturant page.
 
+To access the website, [click here](https://avongalie.github.io/CST-2309-midterm-project-resturant-website/)
+
 ## WireFrames
 ##### Homepage
 ###### (Desktop example shown is bigger then total viewport)
