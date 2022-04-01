@@ -5,7 +5,7 @@ const mainContent = document.getElementById('main-content');
 const menuOverlay = document.getElementById('menu-overlay');
 const footer = document.querySelector('footer');
 const ig = document.getElementById('ig');
-const email = document.getElementById('email');
+const mailto = document.getElementById('mailto');
 const navLink = document.querySelectorAll(".nav-link");
 
 const hm = document.getElementById('hm');
@@ -56,12 +56,12 @@ ig.addEventListener('mouseout', () => {
     ig.classList.remove('fa-beat');
 })
 
-email.addEventListener('mouseover', () => {
+mailto.addEventListener('mouseover', () => {
     console.log('hi')
-    email.classList.add('fa-beat');
+    mailto.classList.add('fa-beat');
 })
 
-email.addEventListener('mouseout', () => {
-    email.classList.remove('fa-beat');
+mailto.addEventListener('mouseout', () => {
+    mailto.classList.remove('fa-beat');
 })
 

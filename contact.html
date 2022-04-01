@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <img id="header-img" src="images/contact_us_background.jpeg">
+        <img id="header-img" alt="Background Image" src="images/contact_us_background.jpeg">
         <div id="menu-overlay"></div>
         <div id="header"> 
             <nav>
@@ -44,14 +44,14 @@
                     <input type="email" id="email" name="email" required>
                 </fieldset>
                 <fieldset>
-                    <label for="reason"><span style="color: red">*</span>Reason</label> <select name="reason">
+                    <label for="reason"><span style="color: red">*</span>Reason</label> <select id="reason" name="reason">
                         <option>Issues</option>
                         <option>Karoke Reservation</option>
                         <option>Dinner Reservation</option>
                     </select><br>
                     <label for="date"><span style="color: red">*</span>Date: </label>
                     <input type="date" id="date" name="date" required><br>
-                    <label for="time">Time: </label><select name="time">
+                    <label for="time">Time: </label><select id="time" name="time">
                         <option>4:00 PM</option>
                         <option>5:00 PM</option>
                         <option>6:00 PM</option>
@@ -66,7 +66,7 @@
                         <option>3:00 AM</option>
                         <option>4:00 AM</option>
                     </select><br>
-                    <label for="group-size">Group Size: </label><select name="group-size">
+                    <label for="group-size">Group Size: </label><select id="group-size" name="group-size">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -88,10 +88,10 @@
         </div>
         <footer>
             <span>Created by Alexsia Avila</span>
-            <a href="https://github.com/avongalie/CST-2309-midterm-project-resturant-website"><img src="images/github_logo.png" width="50px"></a>
+            <a href="https://github.com/avongalie/CST-2309-midterm-project-resturant-website"><img id="github-logo" src="images/github_logo.png" alt="Github Link"></a>
             <div id="social">
                 <a href="https://www.instagram.com/avongalie/"><i id="ig" class="fa-brands fa-instagram fa-2xl"></i></a>
-                <a href="malito:alexsiaavila@gmail.com"><i id="email" class="fa-solid fa-envelope fa-2xl"></i></a>
+                <a href="malito:alexsiaavila@gmail.com"><i id="mailto" class="fa-solid fa-envelope fa-2xl"></i></a>
             </div>
         </footer>
         <script src="script.js" async defer></script>
