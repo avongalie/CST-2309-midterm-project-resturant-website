@@ -132,9 +132,7 @@ table{
     width: 100vw;
 }
 
-#appetizer, #kfc{
-    height: 300px;
-}
+
 #appetizer > div{
     margin-left: 25vw;
 }
@@ -260,9 +258,7 @@ tr{
     /* fix margin for ul */
 }
 @media only screen and (max-width: 1156px){
-    #appetizer{
-        height: 460px;
-    }
+    
 
     #appetizer > div, #kfc > img{
         margin-left: 0;
