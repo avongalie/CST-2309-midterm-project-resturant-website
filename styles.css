@@ -7,10 +7,6 @@ html, body {
     font-family: 'Playfair Display', serif;
 }
 
-#wrapper{
-    overflow-x: hidden;
-    position: relative;
-}
 
 /* main header styles. (applys to all pages) */
 
